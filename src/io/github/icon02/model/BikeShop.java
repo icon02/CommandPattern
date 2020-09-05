@@ -1,8 +1,8 @@
-package com.github.icon02.model;
+package io.github.icon02.model;
 
-import com.github.icon02.commands.BuyCommand;
-import com.github.icon02.commands.CommandManager;
-import com.github.icon02.commands.SellCommand;
+import io.github.icon02.commands.BuyCommand;
+import io.github.icon02.commands.CommandManager;
+import io.github.icon02.commands.SellCommand;
 
 public class BikeShop {
 

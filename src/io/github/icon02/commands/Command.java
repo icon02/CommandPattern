@@ -1,4 +1,4 @@
-package com.github.icon02.commands;
+package io.github.icon02.commands;
 
 public interface Command {
 

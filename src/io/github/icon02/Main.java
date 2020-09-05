@@ -1,6 +1,6 @@
-package com.github.icon02;
+package io.github.icon02;
 
-import com.github.icon02.model.BikeShop;
+import io.github.icon02.model.BikeShop;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -68,7 +68,7 @@ public class Main {
         String output = null;
         try {
             output = reader.readLine();
-        } catch (IOException ignored) {};
+        } catch (IOException ignored) {}
 
         return output;
     }

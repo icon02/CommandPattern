@@ -1,4 +1,4 @@
-package com.github.icon02.model;
+package io.github.icon02.model;
 
 public class Stock {
 

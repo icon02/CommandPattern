@@ -1,28 +1,27 @@
-package com.github.icon02.commands;
+package io.github.icon02.commands;
 
-import com.github.icon02.model.Stock;
+import io.github.icon02.model.Stock;
 
-public class SellCommand implements Command {
+public class BuyCommand implements Command {
 
     private int amount;
     private Stock stock;
 
-    public SellCommand(int amount, Stock stock) {
+    public BuyCommand(int amount, Stock stock) {
         this.amount = amount;
         this.stock = stock;
     }
 
-
     @Override
     public void execute() {
         int curAmount = stock.getStock();
-        stock.setStock(curAmount - amount);
+        stock.setStock(curAmount + amount);
     }
 
     @Override
     public void undo() {
         int curAmount = stock.getStock();
-        stock.setStock(curAmount + amount);
+        stock.setStock(curAmount - amount);
     }
 
     @Override
